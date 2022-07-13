@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Fylo data storage component</title>
+</head>
+<body>
+  <main>
+    <div class="left">
+      <div class="fylo">
+        <img src="images\logo.svg" alt="fylo-logo">
+      </div>
+
+      <div class="icons">
+        <img src="images\icon-document.svg" alt="icon-document">
+        <img src="images\icon-folder.svg" alt="icon-folder">
+        <img src="images\icon-upload.svg" alt="icon-upload">
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="up">
+       <div class="storage"> <p>You’ve used <span class="gb">815 GB</span> of your storage</p></div>
+      <div class="cloud">
+        <p> 185 <span>GB Left</span></p>
+        <div id="triangle-topright"></div>
+      </div>
+      </div>
+      <input type="range" class="range" value="815" min="0" max="1000">
+      <div class="values">
+        <div class="initial"> 0 GB</div>
+        <div class="final">1000 GB</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Toubal Maria</a>.
+    </div>
+  </footer>
+</body>
+</html>

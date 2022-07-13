@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+:root{
+--Pale-Blue: hsl(243, 100%, 93%);
+--Grayish-Blue: hsl(229, 7%, 55%);
+--Dark-Blue: hsl(228, 56%, 26%);
+--Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+body{
+    height: 100vh;
+    background-image: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position-y: bottom;
+    background-color: hsl(229, 57%, 11%);
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.left{
+    background-color: hsl(228, 56%, 26%);
+    padding: 20px 15px;
+    padding-right: 75px !important;
+    padding-left: 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+}
+.icons img{
+   background-color: hsl(229, 57%, 11%);
+   padding: 10px;
+   border-radius: 8px;
+   width: 30px;
+   height: 30px;
+   margin: 0px 5px;
+}
+.right{
+    background-color: hsl(228, 56%, 26%);
+    color: white;
+    padding: 20px 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 550px;
+    height: 150px;
+    
+}
+.storage p{
+    opacity: 60%;
+}
+.storage p .gb{
+    opacity: 100% !important;
+    font-weight: bold;
+    color: white !important;
+}
+.range{
+    width: 500px;
+    padding-left: 30px;
+    background-color: hsl(229, 57%, 11%);
+    color:  linear-gradient(92deg, rgba(248,152,143,1) 0%, rgba(251,76,145,1) 100%);
+    cursor: pointer;
+    height: 10px;
+}
+.values{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.up{
+    display: flex;
+    flex-direction: row;
+
+}
+.cloud{
+    background-color: white;
+    position: relative;
+    left: 120px;
+    bottom: 50px;
+    width: 160px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.cloud #triangle-topright {
+    width: 5px;
+    height: 9px;
+    border-top: none;
+    border-top: 32px solid white;
+    border-left: 32px solid transparent;
+    position: relative;
+    top: 30px;
+    left: 6px;
+  }
+
+.cloud p{
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+}
+.cloud p span{
+    color: hsl(229, 7%, 55%);
+    font-size: 16px;
+    font-weight: lighter;
+
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+.attribution a {
+    color: cyan; 
+}
