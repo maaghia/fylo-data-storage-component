@@ -65,18 +65,57 @@ main{
     font-weight: bold;
     color: white !important;
 }
-.range{
-    width: 500px;
-    padding-left: 30px;
+
+input[type="range"] {
+    -webkit-appearance: none;
+     appearance: none;
+     background: transparent;
+     cursor: pointer;
+     width: 520px;
+ }
+ 
+ /* Removes default focus */
+ input[type="range"]:focus {
+   outline: none;
+ }
+ 
+ /***** Chrome, Safari, Opera and Edge Chromium styles *****/
+ /* slider track */
+ input[type="range"]::-webkit-slider-runnable-track {
     background-color: hsl(229, 57%, 11%);
-    color:  linear-gradient(92deg, rgba(248,152,143,1) 0%, rgba(251,76,145,1) 100%);
-    cursor: pointer;
-    height: 10px;
-}
+    border-radius: 0.5rem;
+    height: 1rem; 
+    width: 520px; 
+ }
+ 
+ /* slider thumb */
+ input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -0px; /* Centers thumb on the track */
+ 
+    /*custom styles*/
+    background-color: white;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 1.5px solid hsl(6, 100%, 80%);
+ }
+ 
+ input[type="range"]:focus::-webkit-slider-thumb {   
+   border: 0.5px solid white;
+   outline:0.8px solid hsl(6, 100%, 80%);
+   outline-offset: 0.125rem; 
+ }
+ input[type="range"]::-moz-range-progress {
+    background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 1rem;
+ }
 .values{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 2rem;
 }
 .up{
     display: flex;
@@ -125,4 +164,41 @@ main{
 }
 .attribution a {
     color: cyan; 
+}
+
+@media screen and (max-width:1050px) {
+    body{
+        background-image: url("images/bg-mobile.png");
+        font-family: 'Raleway', sans-serif;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+        width: 80%;
+        
+    }  
+    .left{
+        width: 400px;
+        height: 180px;
+        margin: 0;
+        padding: 0;
+        padding-right: 0;
+    } 
+    .right{
+        width: 400px;
+        height: 180px;
+    }
+    input[type="range"]{
+        width: 400px;
+    }
+    .cloud{
+        position: absolute;
+        right: 100px;
+    }
+    .cloud #triangle-topright{
+        display: none;
+    }
 }
